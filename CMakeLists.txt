@@ -61,7 +61,7 @@ elseif(UNIX)
 else()
         find_package(FreeGLUT REQUIRED PATHS "C:/msys64/mingw64")
         find_library(glfw3 NAMES glwf3 libglfw3 PATHS "C:/GLFW/lib-mingw-w64" REQUIRED)
-        add_executable(${EXECUTABLE_NAME}
+        add_executable(${PROJECT_NAME}
                 entry_point/main_glwf_opengl2.cpp
                 ${SRC_COMMON}
                 lib/imgui/backends/imgui_impl_opengl2.cpp
